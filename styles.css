@@ -338,7 +338,6 @@ h1 span {
   background: yellow;
 }
 
-
 h2 {
   width: 100%;
   height: 300px;
@@ -393,13 +392,20 @@ h2 {
 
 .projectBtn, .project-github {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 80%;
   padding: 10px;
   border-radius: 50%;
   border: 2px solid orange;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.projectBtn{
+  left: 40%;
+}
+
+.project-github{
+  left: 60%;
 }
 
 .container2 {
