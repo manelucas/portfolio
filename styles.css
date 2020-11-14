@@ -58,33 +58,24 @@ a:hover {
 }
 
 #balloon1 {
-  animation: balloon1 80s infinite;
+  animation: balloon1 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -80s;
+  /* animation-delay: -8s; */
+  animation-timing-function: linear;
 }
 
 @keyframes balloon1 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 65%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 5%;
-    top: 65%;
+    left: 10%;
+    top: 65%
   }
 
   100% {
@@ -94,69 +85,51 @@ a:hover {
 }
 
 #balloon2 {
-  animation: balloon2 80s infinite;
+  animation: balloon2 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -70s;
+  /* animation-delay: -16s; */
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes balloon2 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 15%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 15%;
-    top: 65%;
+    left: 10%;
+    top: 5%
   }
 
   100% {
     left: -15%;
-    top: 10%;
+    top: 65%;
   }
 }
 
 #balloon3 {
-  animation: balloon3 80s infinite;
+  animation: balloon3 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -60s;
+  animation-delay: -10s;
+  animation-timing-function: linear;
 }
 
 @keyframes balloon3 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 65%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 15%;
-    top: 65%;
+    left: 10%;
+    top: 65%
   }
 
   100% {
@@ -164,71 +137,51 @@ a:hover {
     top: 10%;
   }
 }
-
 #balloon4 {
-  animation: balloon4 80s infinite;
+  animation: balloon4 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -55s;
+  animation-delay: -10s;
+  animation-timing-function: linear;
 }
 
 @keyframes balloon4 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 15%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 15%;
-    top: 65%;
+    left: 10%;
+    top: 5%
   }
 
   100% {
     left: -15%;
-    top: 10%;
+    top: 65%;
   }
 }
-
 #balloon5 {
-  animation: balloon5 80s infinite;
+  animation: balloon5 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -40s;
+  animation-delay: -20s;
+  animation-timing-function: linear;
 }
 
 @keyframes balloon5 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 65%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 15%;
-    top: 65%;
+    left: 10%;
+    top: 65%
   }
 
   100% {
@@ -238,70 +191,51 @@ a:hover {
 }
 
 #balloon6 {
-  animation: balloon6 80s infinite;
+  animation: balloon6 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -30s;
+  animation-delay: -20s;
+  animation-timing-function: linear;
 }
 
 @keyframes balloon6 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 15%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 15%;
-    top: 65%;
+    left: 10%;
+    top: 5%
   }
 
   100% {
     left: -15%;
-    top: 10%;
+    top: 65%;
   }
 }
 
-
 #balloon7 {
-  animation: balloon7 80s infinite;
+  animation: balloon7 30s infinite;
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
-  animation-delay: -15s;
+  animation-delay: -35s;
+  animation-timing-function: linear;
 }
 
 @keyframes balloon7 {
   0% {
-    left: -5%;
-    top: 5%;
-  }
-
-  25% {
-    left: 90%;
-    top: 5%
+    left: 85%;
+    top: 65%;
   }
 
   50% {
-    left: 90%;
-    top: 65%;
-  }
-
-  75% {
-    left: 5%;
-    top: 65%;
+    left: 10%;
+    top: 65%
   }
 
   100% {
@@ -320,11 +254,10 @@ a:hover {
 #balloon6 img,
 #balloon7 img {
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.6;
   background-color: transparent;
   width: 100px;
   height: 100px;
-  /* transform: translateX(-100%); */
 }
 
 /* position the containing div blocks that contain the balloons inline */
@@ -336,7 +269,6 @@ a:hover {
 #balloon6,
 #balloon7 {
   display: inline;
-  position: relative;
 }
 
 h1 {
@@ -371,7 +303,8 @@ h1 span {
 
 .location,
 .jobtitle {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
   font-size: 2rem;
   line-height: 2em;
@@ -458,6 +391,12 @@ h2 {
   -ms-transform: translate(-50%, -50%);
 }
 
+#projectBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .container2 {
   grid-area: B;
 }
@@ -491,7 +430,7 @@ h2 {
 }
 
 .skills {
-  height: 450px;
+  height: 550px;
 }
 
 /* "My Skills" title */
