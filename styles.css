@@ -391,10 +391,15 @@ h2 {
   -ms-transform: translate(-50%, -50%);
 }
 
-#projectBtn {
+.projectBtn, .project-github {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
 }
 
 .container2 {
@@ -466,7 +471,7 @@ h4 {
 }
 
 .about-container p {
-  margin: 150px auto;
+  margin: 50px auto;
   width: 60%;
   text-align: center;
   line-height: 1.8em;
@@ -478,24 +483,10 @@ h4 {
   display: block;
   width: 250px;
   height: 250px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
   border: 4px solid black;
   border-radius: 50%;
   background-color: blanchedalmond;
-}
-
-/* Get in Touch! */
-.contact span {
-  margin-top: 100px;
-  width: 100%;
-  border-top: 5px solid white;
-  padding: 50px;
-  display: block;
-  height: 100px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 1.5em;
-  color: orange;
 }
 
 /* Icon Contacts */
