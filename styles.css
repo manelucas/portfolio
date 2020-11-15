@@ -288,19 +288,20 @@ h1 {
   text-shadow: 1px 1px black;
 }
 
-.location,
-.jobtitle {
+.jobTitle, .location {
+  display: flex;
   width: 50%;
   margin: 50px auto;
   text-align: center;
   font-size: 2rem;
-  line-height: 2em;
+  line-height: 1.5em;
+  justify-content: center;
+  align-items: center;
 }
 
 .location {
   border-top: 2px solid orange;
-  margin: 0 auto;
-  height: 100%;
+  width: 50%;
   padding-top: 5%;
 }
 
@@ -434,6 +435,8 @@ span {
   position: absolute;
   top: 80%;
   padding: 10px;
+  /* opacity: 0.5; */
+  /* width: 35px; */
   border-radius: 50%;
   border: 2px solid orange;
   display: flex;
