@@ -288,27 +288,13 @@ h1 {
   text-shadow: 1px 1px black;
 }
 
-h1 span {
-  background-color: transparent;
-  color: rgb(170, 4, 4);
-}
-
-.subtitle {
-  width: 100%;
-  height: 300px;
-  margin-top: 50px;
-  text-align: center;
-  margin-bottom: 250px;
-}
-
 .location,
 .jobtitle {
   width: 50%;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
   font-size: 2rem;
   line-height: 2em;
-  margin-bottom: 5%;
 }
 
 .location {
@@ -366,7 +352,16 @@ h2 {
   text-align: center;
   padding: 20x 0;
   font-size: 30px;
-  height: 300px;
+  height: 300px;s
+}
+
+#projectsGrid>div:hover {
+  background-color: lightgreen;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+  transition: 0.3s;
+  z-index: 10;
 }
 
 .container1 {
@@ -374,7 +369,15 @@ h2 {
   position: relative;
 }
 
-.container1 span {
+.container1:hover{
+  cursor: default; 
+  transform: rotate(360deg); 
+  transition: all 1.3s ease-in-out 0s;
+  background-color: cadetblue;
+  z-index: 10;
+}
+
+span {
   position: absolute;
   display: block;
   width: 100%;
@@ -385,9 +388,46 @@ h2 {
   top: 20%;
   left: 50%;
   letter-spacing: 0.1em;
-  font-size: 40px;
+  font-size: 30px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.container2 {
+  grid-area: B;
+  position: relative;
+}
+
+.container3 {
+  grid-area: C;
+  position: relative;
+}
+
+.container4 {
+  grid-area: D;
+  position: relative;
+}
+
+.container5 {
+  grid-area: E;
+  position: relative;
+}
+
+.container6 {
+  grid-area: F;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.container1 img,
+.container2 img,
+.container3 img,
+.container4 img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: relative;
 }
 
 .projectBtn, .project-github {
@@ -408,43 +448,11 @@ h2 {
   left: 60%;
 }
 
-.container2 {
-  grid-area: B;
-}
-
-.container3 {
-  grid-area: C;
-}
-
-.container4 {
-  grid-area: D;
-}
-
-.container5 {
-  grid-area: E;
-}
-
-.container6 {
-  grid-area: F;
-  margin-bottom: 100px;
-}
-
-.container1 img,
-.container2 img,
-.container3 img,
-.container4 img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  margin: 0 auto;
-  position: relative;
-}
-
 .skills {
   height: 550px;
 }
 
-/* "My Skills" title */
+/* "My Skills" and Get im touch titles */
 h4 {
   width: 100%;
   text-align: center;
