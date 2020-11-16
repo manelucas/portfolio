@@ -4,7 +4,7 @@
   box-sizing: border-box;
   background-color: #061724;
   color: white;
-  font-family: Kumbh Sans;
+  font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 0.3em;
 }
 
@@ -19,7 +19,7 @@ nav * {
 nav {
   justify-content: space-between;
   height: 75px;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: white;
 }
 
