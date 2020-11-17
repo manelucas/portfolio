@@ -308,7 +308,7 @@ h1 {
 #scrollButton {
   background-color: orange;
   position: fixed;
-  right: 10px;
+  left: 20px;
   bottom: 10px;
   width: 50px;
   height: 50px;
@@ -342,18 +342,17 @@ h2 {
   display: grid;
   width: 80%;
   margin: auto;
-  grid-template-areas: ". A A A ."
-    ". B B C ."
+  grid-template-areas: ". A B C ."
     ". D E F .";
   grid-gap: 10px;
 }
 
 #projectsGrid>div {
-  background-color: cadetblue;
+  /* border: 2px solid black; */
   text-align: center;
   padding: 20x 0;
   font-size: 30px;
-  height: 300px;s
+  height: 300px;
 }
 
 #projectsGrid>div:hover {
@@ -362,19 +361,6 @@ h2 {
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
   transition: 0.3s;
-  z-index: 10;
-}
-
-.container1 {
-  grid-area: A;
-  position: relative;
-}
-
-.container1:hover{
-  cursor: default; 
-  transform: rotate(360deg); 
-  transition: all 1.3s ease-in-out 0s;
-  background-color: cadetblue;
   z-index: 10;
 }
 
@@ -394,6 +380,17 @@ span {
   -ms-transform: translate(-50%, -50%);
 }
 
+.container1 {
+  grid-area: A;
+  position: relative;
+}
+
+.container1:hover{
+  cursor: default;
+  background-color: cadetblue;
+  z-index: 10;
+}
+
 .container2 {
   grid-area: B;
   position: relative;
@@ -407,6 +404,10 @@ span {
 .container4 {
   grid-area: D;
   position: relative;
+  background-color: transparent !important;
+  width: 200px;
+  margin: 0 auto;
+
 }
 
 .container5 {
@@ -416,15 +417,23 @@ span {
 
 .container6 {
   grid-area: F;
+  /* display: flex; */
+  /* flex-direction: column; */
   position: relative;
+  /* height: 500px; */
+  width: 100px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 
 .container1 img,
 .container2 img,
 .container3 img,
-.container4 img {
+.container4 img,
+.container5 img,
+.container6 img {
   width: 100%;
+  background-color: transparent;
   height: 100%;
   opacity: 0.8;
   margin: 0 auto;
@@ -434,9 +443,9 @@ span {
 .projectBtn, .project-github {
   position: absolute;
   top: 80%;
+  width: 75px;
+  height: auto;
   padding: 10px;
-  /* opacity: 0.5; */
-  /* width: 35px; */
   border-radius: 50%;
   border: 2px solid orange;
   display: flex;
@@ -455,7 +464,7 @@ span {
   height: 550px;
 }
 
-/* "My Skills" and Get im touch titles */
+/* "My Skills" and Get in touch titles */
 h4 {
   width: 100%;
   text-align: center;
