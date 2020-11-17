@@ -19,7 +19,7 @@ nav * {
 nav {
   justify-content: space-between;
   height: 75px;
-  font-size: 1.5em;
+  font-size: 23px;
   color: white;
 }
 
@@ -48,13 +48,48 @@ a:hover {
   margin-top: 100px;
 }
 
-.mainTitle {
+.mainTitle-container {
   background-color: rgb(150, 204, 206);
   border-bottom: 5px solid white;
   border-top: 5px solid white;
   border-radius: 20px;
   height: 40vh;
   position: relative;
+}
+
+/* Main title (name) */
+h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: black;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.3em;
+  z-index: 2;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px black;
+}
+
+.jobTitle, .location {
+  display: flex;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  border-top: 2px solid orange;
+  width: 50%;
+  padding-top: 5%;
 }
 
 #balloon1 {
@@ -244,7 +279,6 @@ a:hover {
   }
 }
 
-
 /* Sizing the images and position absolute to contain the balloons inside the container */
 #balloon1 img,
 #balloon2 img,
@@ -271,40 +305,6 @@ a:hover {
   display: inline;
 }
 
-h1 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: black;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.3em;
-  z-index: 2;
-  letter-spacing: 0.1em;
-  text-shadow: 1px 1px black;
-}
-
-.jobTitle, .location {
-  display: flex;
-  width: 50%;
-  margin: 50px auto;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 1.5em;
-  justify-content: center;
-  align-items: center;
-}
-
-.location {
-  border-top: 2px solid orange;
-  width: 50%;
-  padding-top: 5%;
-}
-
 #scrollButton {
   background-color: orange;
   position: fixed;
@@ -325,6 +325,7 @@ h1 {
   background: yellow;
 }
 
+/* Project and About titles */
 h2 {
   width: 100%;
   height: 300px;
@@ -336,110 +337,182 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 500;
 }
 
-#projectsGrid {
-  display: grid;
-  width: 80%;
-  margin: auto;
-  grid-template-areas: ". A B C ."
-    ". D E F .";
-  grid-gap: 10px;
-}
 
-#projectsGrid>div {
-  /* border: 2px solid black; */
-  text-align: center;
-  padding: 20x 0;
-  font-size: 30px;
-  height: 300px;
-}
-
-#projectsGrid>div:hover {
+/* #projectsGrid>div:hover {
   background-color: lightgreen;
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1); 
   transition: 0.3s;
-  z-index: 10;
+  z-index: 10; 
+} */
+
+.projects-container {
+  margin-top: 150px auto;
+  /* max-width: 1000px; */
+  position: relative;
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
-span {
+.myProjects {
+  display: none;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 25px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow-container {
+  display: flex;
+  width: -10%;
+  justify-content: flex-start;
   position: absolute;
-  display: block;
+  left: 0;
+  top: 50%;
+}
+
+.project-image {
+  /* vertical-align: middle; */
+  /* position: absolute; */
+  /* left: 50%; */
   width: 100%;
-  height: 100px;
-  background-color: transparent;
-  font-weight: bolder;
-  z-index: 5;
-  top: 20%;
-  left: 50%;
-  letter-spacing: 0.1em;
-  font-size: 30px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  height: auto;
 }
 
-.container1 {
-  grid-area: A;
-  position: relative;
-}
-
-.container1:hover{
-  cursor: default;
-  background-color: cadetblue;
-  z-index: 10;
-}
-
-.container2 {
-  grid-area: B;
-  position: relative;
-}
-
-.container3 {
-  grid-area: C;
-  position: relative;
-}
-
-.container4 {
-  grid-area: D;
-  position: relative;
-  background-color: transparent !important;
-  width: 200px;
-  margin: 0 auto;
-
-}
-
-.container5 {
-  grid-area: E;
-  position: relative;
-}
-
-.container6 {
-  grid-area: F;
-  /* display: flex; */
-  /* flex-direction: column; */
-  position: relative;
-  /* height: 500px; */
+.tall-image {
+  display: flex;
+  justify-content: center;
   width: 100px;
+  height: auto;
   margin: 0 auto;
-  margin-bottom: 100px;
+  vertical-align: middle;
 }
 
-.container1 img,
-.container2 img,
-.container3 img,
-.container4 img,
-.container5 img,
-.container6 img {
-  width: 100%;
+/* Next & previous buttons */
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
   background-color: transparent;
-  height: 100%;
-  opacity: 0.8;
-  margin: 0 auto;
-  position: relative;
+  padding: 10px;
+  margin-top: -20px;
+  color: rgb(85, 8, 8);
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.8);
 }
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.projectName{
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
+  padding: 8px 12px;
+  flex-direction: column;
+  padding-top: 10px;
+  text-shadow: 2px 2px black;
+  flex-wrap: wrap;
+}
+
+.description {
+  color: #f2f2f2;
+  background-color: transparent;
+  font-size: 18px;
+  opacity: 0.8;
+  line-height: 1.8rem;
+  padding-top: 25px;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+.links-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* .myProjects a {
+  text-decoration: none;
+  width: 50%;
+  flex-direction: row;
+}
+.myProjects a:nth-child(2) {
+  text-decoration: none;
+  width: 50%;
+  justify-content: flex-end;
+} */
+
+/* Number text (1/3 etc) */
+.projectNumber {
+  color: #f2f2f2;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* .dot-container {
+  width: 50%;
+  margin: 0 auto; 
+} */
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 1000px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* 
 .projectBtn, .project-github {
   position: absolute;
   top: 80%;
@@ -450,15 +523,9 @@ span {
   border: 2px solid orange;
   display: flex;
   justify-content: space-around;
-}
+} */
 
-.projectBtn{
-  left: 40%;
-}
 
-.project-github{
-  left: 60%;
-}
 
 .skills {
   height: 550px;

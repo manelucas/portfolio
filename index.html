@@ -14,115 +14,200 @@
 
 <body>
 
-<main>
-    <nav>
-        <div id="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-        </div>
-    </nav>
-    <section class="homeContainer">
-        <div class="mainTitle">
-            <h1 class="title">Manuel Lucas</h1>
-            <div id="balloon1">
-                <img src="./assets/images/1balloon.png" alt="hot air balloon">
+    <main>
+        <nav>
+            <div id="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
             </div>
-            <div id="balloon2">
-                <img src="./assets/images/2balloon.png" alt="hot air balloon">
+        </nav>
+        <section class="homeContainer">
+            <div class="mainTitle-container">
+                <h1 class="title">Manuel Lucas</h1>
+                <div id="balloon1">
+                    <img src="./assets/images/1balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon2">
+                    <img src="./assets/images/2balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon3">
+                    <img src="./assets/images/3balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon4">
+                    <img src="./assets/images/4balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon5">
+                    <img src="./assets/images/5balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon6">
+                    <img src="./assets/images/6balloon.png" alt="hot air balloon">
+                </div>
+                <div id="balloon7">
+                    <img src="./assets/images/7balloon.png" alt="hot air balloon">
+                </div>
             </div>
-            <div id="balloon3">
-                <img src="./assets/images/3balloon.png" alt="hot air balloon">
+            <div class="subtitle">
+                <h3 class="jobTitle">Software Developer</h3>
+                <h3 class="location">Bristol, UK</h3>
             </div>
-            <div id="balloon4">
-                <img src="./assets/images/4balloon.png" alt="hot air balloon">
-            </div>
-            <div id="balloon5">
-                <img src="./assets/images/5balloon.png" alt="hot air balloon">
-            </div>
-            <div id="balloon6">
-                <img src="./assets/images/6balloon.png" alt="hot air balloon">
-            </div>
-            <div id="balloon7">
-                <img src="./assets/images/7balloon.png" alt="hot air balloon">
-            </div>
-        </div>
-        <div class="subtitle">
-            <h3 class="jobTitle">Software Developer</h3>
-            <h3 class="location">Bristol, UK</h3>
-        </div>
-    </section>
+        </section>
 
-    <button id="scrollButton">
-        <i class="material-icons">arrow_upward</i>
-    </button>
+        <button id="scrollButton">
+            <i class="material-icons">arrow_upward</i>
+        </button>
 
-    <article>
-        <h2 id="project-title">Projects</h2>
-        <div id="projectsGrid">
-            <div class="container1">
-                <span>Work in progress</span>
+        <!-- <article>
+        
+        <div id="projects-container">
+            <div class="no1-se-project">
+                <h5>Test</h5>
                 <img src="./assets/images/typewriter.gif" alt="Work in progress">
                 <button class="projectBtn"><a href="">View</a></button>
                 <button class="project-github">Code<a href=""></a></button>
             </div>
-            <div class="container2">
+            <div class="beer-api-project">
+                <h5>Test</h5>
                 <img src="./assets/images/enigma2.jpg" alt="Turin">
                 <button class="projectBtn"><a href="">View</a></button>
                 <button class="project-github"><a href="">Code</a></button>
             </div>
-            <div class="container3">
+            <div class="game-project">
+                <h5>Test</h5>
                 <img src="./assets/images/laptop1.jpg" alt="laptop">
                 <button class="projectBtn"><a href="">View</a></button>
                 <button class="project-github"><a href="">Code</a></button>
             </div>
-            <div class="container4">
+            <div class="calculator-project">
+                <h5>Test</h5>
                 <img src="./assets/images/calculator.png" alt="calculator work">
                 <button class="projectBtn"><a href="">View</a></button>
                 <button class="project-github"><a href="">Code</a></button>
             </div>
-            <div class="container5">
+            <div class="morse-code-project">
+                <h5>Test</h5>
                 <img src="/assets/images/morse_code.png" alt="morse code img">
-                <span>Morse Code Translator</span>
-                <button class="projectBtn"><a href="https://manelucas.github.io/translation_english_to_morse/">View</a></button>
-                <button class="project-github"><a href="">Code</a></button>
+                <a href="https://manelucas.github.io/translation_english_to_morse/">View</a></
+                <a href="">Code</a>
             </div>
-            <div class="container6">
-                <span>Punk API</span>
+            <div class="to-do-list">
+                <h5>Test</h5>
                 <img src="/assets/images/beer.png" alt="">
                 <div>
-                    <button class="projectBtn"><a href="https://manelucas.github.io/calculator">View</a></button>
-                    <button class="project-github"><a href="">Code</a></button>
-                </div>
+                
             </div>
         </div>
-    </article>
+    </article> -->
 
-    <section class="skills">
-        <h4>My skills</h4>
-        <article class="skills-container">
-            <div>
-                <i class="fab fa-css3-alt"></i>
+<section>
+    <h2 id="project-title">Projects</h2>
+    <div class="projects-container">
+        <div class="left-arrow-container">
+            <a class="prev" onclick="plusProjects(-1)">&#10094;</a>
+        </div>
+        <div class="myProjects fade">
+            <img class="project-image" src="./assets/images/morse_code.png">
+            <h5 class="projectName">No1 South East</h5>
+            <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ea deserunt officia praesentium repellendus veniam ducimus libero amet sint quis culpa, commodi minus cupiditate nam velit, eaque voluptate error recusandae.</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-html5"></i>
+            <div class="projectNumber">1 / 6</div>
+        </div>
+        <div class="myProjects fade">
+            <img class="project-image tall-image" src="./assets/images/calculator.png">
+            <h5 class="projectName">Calculator</h5>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est quos blanditiis exercitationem minima ad, doloremque qui officia esse nihil quas commodi sint similique. Consequuntur facilis libero iste aliquam ratione.</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-angular"></i>
+            <div class="projectNumber">2 / 6</div>
+        </div>
+        <div class="myProjects beer-app fade">
+            <img class="project-image tall-image" src="/assets/images/beer.png">
+            <h5 class="projectName">Beer App</h5>
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sunt eaque minima optio error, libero vel ducimus accusantium neque omnis suscipit. Maxime cum officia eos eum veniam error temporibus voluptate!</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-react"></i>
+            <div class="projectNumber">3 / 6</div>
+        </div>
+        <div class="myProjects fade">
+            <img class="project-image" src="/assets/images/morse_code.png">
+            <h5 class="projectName">Morse Code</h5>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis est, odio sequi, ab et quod rerum reiciendis deserunt distinctio nesciunt cum omnis amet fugit ratione totam quae ducimus blanditiis excepturi.</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-sass"></i>
+            <div class="projectNumber">4 / 6</div>
+        </div>
+        <div class="myProjects fade">
+            <img class="project-image" src="/assets/images/morse_code.png">
+            <h5 class="projectName">Game</h5>
+            <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore praesentium neque ratione ea asperiores maiores numquam, error, dolorum ipsam tempore, possimus commodi nulla quibusdam magni saepe in qui cumque accusantium!</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-git"></i>
+            <div class="projectNumber">5 / 6</div>
+        </div>
+        <div class="myProjects fade">
+            <img class="project-image" src="/assets/images/morse_code.png">
+            <h5 class="projectName">Game</h5>
+            <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate excepturi iusto recusandae asperiores voluptas porro, deleniti qui, eaque ea impedit ipsa voluptatibus unde, velit sunt veniam nobis et facere officia?</div>
+            <div class="links-container">
+                <a href="https://manelucas.github.io/calculator">View</a>
+                <a href="">Code</a>
             </div>
-            <div>
-                <i class="fab fa-js-square"></i>
-            </div>
-        </article>
-    </section>
+            <div class="projectNumber">6 / 6</div>
+        </div>
+        <div class="right-arrow-container">
+            <a class="next" onclick="plusProjects(1)">&#10095;</a>
+        </div>
+    </div>
+    <br>
+
+    <div class="dot-container" style="text-align: center">
+        <span class="dot" onclick="currentProject(1)"></span>
+        <span class="dot" onclick="currentProject(2)"></span>
+        <span class="dot" onclick="currentProject(3)"></span>
+        <span class="dot" onclick="currentProject(4)"></span>
+        <span class="dot" onclick="currentProject(5)"></span>
+        <span class="dot" onclick="currentProject(6)"></span>
+    </div>
+</section>
+
+
+
+<section class="skills">
+    <h4>My skills</h4>
+    <article class="skills-container">
+        <div>
+            <i class="fab fa-css3-alt"></i>
+        </div>
+        <div>
+            <i class="fab fa-html5"></i>
+        </div>
+        <div>
+            <i class="fab fa-angular"></i>
+        </div>
+        <div>
+            <i class="fab fa-react"></i>
+        </div>
+        <div>
+            <i class="fab fa-sass"></i>
+        </div>
+        <div>
+            <i class="fab fa-git"></i>
+        </div>
+        <div>
+            <i class="fab fa-js-square"></i>
+        </div>
+    </article>
+</section>
 
     <article class="about-container">
         <h2 id="about">About</h2>
