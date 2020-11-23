@@ -486,6 +486,7 @@ h2 {
 .skills {
   height: 550px;
   width: 90%;
+  margin: 0 auto;
   margin-bottom: 200px;
 }
 
@@ -500,19 +501,20 @@ h4 {
 }
 
 .skills-container {
-  width: 50%;
+  width: 450px;
   height: 100%;
   margin: 0 auto;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .icons {
   margin: 0 auto;
   font-size: 40px;
+  width: 450px;
   height: 100px;
+  width: 175px;
   display: flex;
   align-items: center;
   justify-content: space-around;
