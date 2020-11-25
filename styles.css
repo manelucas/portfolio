@@ -501,7 +501,7 @@ h4 {
 }
 
 .skills-container {
-  width: 450px;
+  width: 650px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -693,7 +693,6 @@ footer {
 
   .project-image{
     height: 80px;
-    width: 
   }
 
   .skills-container {
@@ -716,8 +715,9 @@ footer {
     width: 80%;
   }
 
-  .contact span {
+  .contact-images {
     font-size: 30px;
+    width: 80%;
   }
   .footer {
     font-size: 12px;
