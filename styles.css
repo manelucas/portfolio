@@ -746,8 +746,9 @@ footer {
     width: 80%;
   }
 
-  .contact span {
+  .contact-images {
     font-size: 30px;
+    width: 80%;
   }
   .footer {
     font-size: 12px;
