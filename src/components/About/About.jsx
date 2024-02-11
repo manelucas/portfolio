@@ -8,7 +8,7 @@ const About = () => {
             <section id="about">
               <div className="py-4 border-bottom">
                   <h2 className="mt-100">
-                      About me
+                      About
                   </h2>
               </div>
               <div className="content-section slide-up">
