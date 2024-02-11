@@ -1,16 +1,21 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './App.css';
-import Navbar from './components/Navbar/Navbar'
+
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home'
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 
 const App = () => {
   return (
     <>
+      <Navbar />
       <main className="container">
-        <Navbar />
-        <h1>Welcome to my website</h1>
+        <Home/>
+        <About/>  
+        <Projects/>
       </main> 
     </>
   );
