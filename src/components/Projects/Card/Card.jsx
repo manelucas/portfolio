@@ -8,7 +8,7 @@ const Card = (props) => {
         <div className="row p-5 project-card faded-animation hidden my-5 align-items-center ">
             <div className="col-xl-5 col-lg-12">
                 <div className="image-container">
-                    <img className="br-1 w-100 h-auto" loading="lazy" src={imageSrc} alt="Image from Iotabl dashboard"/>
+                    <img className="br-1 w-100 h-auto" loading="lazy" src={imageSrc} alt={`Image from the ${title} project`} />
                 </div>
             </div>
             <div className="col-xl-7 col-lg-12">
