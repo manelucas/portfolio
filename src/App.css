@@ -8,7 +8,38 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(90deg, #1c8d8f, #066769);
-  color: white !important;
+  color: #f3f3f3 !important;
+}
+
+/* .navbar-fixed {
+  z-index: 5;
+} */
+
+nav {
+  height: 50px; 
+  background: linear-gradient(90deg, #1c8d8f, #066769);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+nav a {
+  font-size: 20px;
+  color: #f3f3f3;
+  opacity: 0.85;
+  padding: 10px 5px;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+#about, #projects {
+  padding-top: 70px;
 }
 
 .text-primary {
@@ -30,12 +61,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;  
+  font-size: 45px;  
 }
 
-.mt-100 {
-  margin-top: 100px;
-}
 
 .author {
   font-size: 1.8rem;
@@ -157,12 +185,12 @@ span {
   text-decoration: underline;
 }
 
-/* .slide-left {
+.slide-left {
   opacity: 0;
   position: relative; 
   left: -100%;
   animation: slideFromLeft 2s ease forwards, fadeIn 1s ease forwards;
-} */
+}
 
 @keyframes slideFromLeft {
   to {
@@ -194,16 +222,16 @@ span {
   height: 40px;
 }
 
-.project-card {
-  /* opacity: 0; */
-  /* transform: translateY(20px);
-  transition: opacity 2s ease, transform 0.5s ease; */
+.faded-animation {
+  opacity: 0; 
+  transform: translateY(20px);
+  transition: opacity 2s ease, transform 0.5s ease;
 }
 
 .visible {
-  /* opacity: 1; */
-  /* transform: translateY(0); */
+  opacity: 1; 
 }
+
 
 @media only screen and (max-width: 1200px) {
   .main-title {
