@@ -1,18 +1,17 @@
 import React from 'react'
-import './About.css';
 import ProfileImage from '../../assets/profile_photo.png'
 
 const About = () => {
     return(
         <>
             <section id="about">
-              <div className="py-4 border-bottom">
-                  <h2 className="mt-100">
+              <div className="py-2 border-bottom">
+                  <h2>
                       About
                   </h2>
               </div>
-              <div className="content-section slide-up">
-                  <div className="d-flex g-1 align-items-center pb-4 faded-animation md-flex-column">
+              <div className="content-section">
+                  <div className="d-flex g-1 align-items-center pb-4 md-flex-column">
                       <img className="profile-img" loading="lazy" src={ProfileImage} alt="Profile image"/>
                       <p>
                           Olá! I am Manuel Lucas. A Lisbon-born Portuguese native with a passion for nurturing both people and technology. My journey began amidst the vibrant streets of Lisbon, where I fostered a deep appreciation for community and culture.</p>

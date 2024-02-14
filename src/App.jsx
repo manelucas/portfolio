@@ -8,6 +8,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -16,9 +17,12 @@ const App = () => {
       <Navbar />
       <main className="container">
         <Home/>
-        <About/>  
-        <Projects/>
-        <Contact/>
+        <div className='content'>
+          <About/>  
+          <Projects/>
+          <Contact/>
+        </div>
+        <Footer/>
       </main> 
     </>
   );
