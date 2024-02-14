@@ -67,6 +67,11 @@ h2 {
   gap: 50px;
 }
 
+.g-3 {
+  gap: 10px;
+}
+
+
 /* @keyframes wave {
   50% {
       transform: rotate(45deg);
@@ -124,15 +129,15 @@ span {
 }
 
 .btn-primary {
-  background-color:  rgb(7, 69, 3);
-  border-color:  rgb(7, 69, 3);
+  background-color:  #FF003C;
+  border-color:  #FF003C;
   opacity: 0.8;
   min-width: 120px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(11, 97, 4);
-  border-color:  rgb(11, 97, 4);
+  background-color: #FF003C;
+  border-color:  #FF003C;
   /* background-color:  rgb(7, 69, 3);
   border-color:  rgb(7, 69, 3); */
   opacity: 1;

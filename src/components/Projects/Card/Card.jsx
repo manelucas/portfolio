@@ -14,11 +14,9 @@ const Card = (props) => {
             <div className="col-xl-7 col-lg-12">
                 <h3>{title}</h3>
                 <p className="p-0">{description}</p>
-                <div>
-                    <div>
-                        <span className="text-bold">Technologies:</span>
-                        <span>{technologies}</span>
-                    </div>
+                <div className='d-flex g-3'>
+                    <span className="text-bold">Technologies:</span>
+                    <span>{technologies}</span>
                 </div> 
                 {!!links && (
                     <div className="mt-2 py-2 g-2 d-flex g-1 align-items-center">
