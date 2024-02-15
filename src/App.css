@@ -285,6 +285,10 @@ span {
   .image-container {
       width: 300px;
   }
+  .project-card {
+    padding: 1rem;
+    align-items: center;
+  }
 }
 
 
