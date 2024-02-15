@@ -10,11 +10,12 @@ const Contact = () => {
                             Get in touch
                         </h2>
                     </div>    
-                    <div className='d-flex g-3 align-items-center'>
-                        <p className='p-0 m-0'>
+                    <div className='d-flex flex-column g-3'>
+                        <p>
                         If you have any questions, inquiries, or just want to say hello, feel free to reach out to me at: 
                         </p>
-                        <span className='pl-2 ml-2'>
+                        <span className='d-flex g-3 align-items-center'>
+                        <i class="fa-solid fa-envelope text-white fs-5"></i>
                             <a href="mailto:manelglucas@gmail.com" className="text-white fs-5">manelglucas@gmail.com</a>
                         </span>
                     </div>    

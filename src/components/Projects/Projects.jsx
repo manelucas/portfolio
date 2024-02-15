@@ -22,7 +22,6 @@ const Projects = () => {
             id: 2,
             imageSrc: IotablImage,
             title: "Iotabl",
-            // description: "Technical lead at Iotabl - a two-sided data collection platform for the Internet of Things.",
             description: `As the technical lead at Iotabl, I overseen the development of a two-sided IoT data collection platform. I've managed technical aspects, ensuring performance and scalability, collaborating with cross-functional teams, while driving innovation. I made critical decisions on the technology stack, system design, and feature prioritisation, aligning technical efforts with business goals. My role combined technical expertise, leadership, and collaboration to build and maintain a competitive IoT solution.`,
             technologies: "Vue & Laravel, CSS, Bootstrap, AWS, MySQL.",
             links: [{ url: "https://github.com/manelucas/iotabl", text: "Code" }],
@@ -32,7 +31,7 @@ const Projects = () => {
             id: 3,
             imageSrc: No1SEImage,
             title: "No1 South East",
-            description: "Web app* that provided food offers & discounts from small venues in the South East of London.",
+            description: "Crafted the minimum viable product (MVP) for No1 South East, a dynamic web application catering to the South East London area's food enthusiasts. Development included essential features such as a search functionality, advanced filtering options, geolocation, and an admin panel.",
             technologies: "React, SASS, Firebase, API.",
             links: null,
             disclaimer: "* Repo is private."
@@ -41,7 +40,7 @@ const Projects = () => {
             id: 4,
             imageSrc: BeersApiImage,
             title: "Beers API",
-            description: "One of my first personal projects to practice the Rest API and search term.",
+            description: "An early personal project representing my foray into REST API development and search functionality implementation, showcasing foundational skills in backend integration and data retrieval.",
             technologies: "React & CSS, Rest API.",
             links: [
                 { url: "https://github.com/manelucas/beersAPI", text: "Code" },
@@ -49,18 +48,18 @@ const Projects = () => {
             ],
             disclaimer: null
         },
-        {
-            id: 5,
-            imageSrc: CalculatorImage,
-            title: "Calculator",
-            description: "The famous calculator project that every beginner goes through. Equally, this was one of my first projects that I completed during my coding bootcamp at Nology. While this isn't the most useful kind of page, it really helped me improve my technical skills.",
-            technologies: "Vanilla JS, HTML, CSS.",
-            links: [
-                { url: "https://github.com/manelucas/calculator", text: "Code" },
-                { url: "https://manelucas.github.io/calculator/", text: "Page" }
-            ],
-            disclaimer: null
-        }
+        // {
+        //     id: 5,
+        //     imageSrc: CalculatorImage,
+        //     title: "Calculator",
+        //     description: "The famous calculator project that every beginner goes through. This was one of my first projects that I completed during my coding bootcamp at Nology. This significantly bolstered my technical skills, offering invaluable confidence in problem-solving and software development.",
+        //     technologies: "Vanilla JS, HTML, CSS.",
+        //     links: [
+        //         { url: "https://github.com/manelucas/calculator", text: "Code" },
+        //         { url: "https://manelucas.github.io/calculator/", text: "Page" }
+        //     ],
+        //     disclaimer: null
+        // }
       ];
 
       const [isVisible, setIsVisible] = useState(false);
@@ -70,10 +69,10 @@ const Projects = () => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
               setIsVisible(true);
-              observer.unobserve(entry.target); // Stop observing once element is visible
+              observer.unobserve(entry.target); 
             }
           });
-        }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+        }, { threshold: 0.2 }); 
     
         const elements = document.querySelectorAll('.card-wrapper');
         elements.forEach(element => observer.observe(element));
@@ -91,54 +90,15 @@ const Projects = () => {
                     <h2 className="mt-100">Projects</h2>
                 </div>
                 <div className="content-section">
-                    {!!projectsData && projectsData.map((project, index) => (
-                        <div key={index} className={`card-wrapper faded-animation ${isVisible ? 'visible' : ''} mb-5`}>
-                        <Card imageSrc={project.imageSrc} links={project.links} title={project.title} description={project.description} technologies={project.technologies} disclaimer={project.disclaimer} />
+                    <div className="row">
+                        <div className="col">
+                            {!!projectsData && projectsData.map((project, index) => (
+                                <div key={index} className={`card-wrapper faded-animation ${isVisible ? 'visible' : ''} mb-5`}>
+                                <Card imageSrc={project.imageSrc} links={project.links} title={project.title} description={project.description} technologies={project.technologies} disclaimer={project.disclaimer} />
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                    
-                    {/* <Card 
-                        imageSrc={BoardImage} 
-                        title="Governance360" 
-                        technologies="React & Typescript, Laravel, Redux, MUI, Storybook." 
-                        description="Subscription based web app* that provides management tools dedicated to Board directors and SMEs." 
-                        links={[{ url: "https://www.governance360.com/", text: "Website" }]} 
-                        disclaimer="* Web App & repo are private."
-                    />
-
-                    <Card
-                        imageSrc={IotablImage} 
-                        title="Iotabl" 
-                        description="Technical lead at Iotabl - a two-sided data collection platform for the Internet of Things." 
-                        technologies="Vue & Laravel, CSS, Bootstrap, AWS, MySQL." 
-                        links={[{ url: "https://github.com/manelucas/iotabl", text: "Code" }]} 
-                    />
-
-                    
-                    <Card
-                        imageSrc={No1SEImage} 
-                        title="No1 South East" 
-                        description="Web app* that provided food offers & discounts from small venues in the South East of London." 
-                        technologies="React, SASS, Firebase, API." 
-                        disclaimer="* Repo is private."
-                    />  
-
-                    <Card
-                        imageSrc={BeersApiImage} 
-                        title="Beers API" 
-                        description="One of my first personal projects to practice the Rest API and search term." 
-                        technologies="React & CSS, Rest API." 
-                        links={[{ url: "https://github.com/manelucas/beersAPI", text: "Code" }, {url: "https://beer-api-713a5.web.app/", text: "Page"}]} 
-                    />
-                        
-
-                    <Card
-                        imageSrc={CalculatorImage} 
-                        title="Calculator" 
-                        description="The famous calculator project that every beginner goes through. Equally, this was one of my first projects that I completed during my coding bootcamp at Nology. While this isn't the most useful kind of page, it really helped me improve my technical skills." 
-                        technologies="Vanilla JS, HTML, CSS." 
-                        links={[{ url: "https://github.com/manelucas/calculator", text: "Code" }, {url: "https://manelucas.github.io/calculator/", text: "Page"}]} 
-                    /> */}
+                    </div>
                  </div>
           </section>
         </>

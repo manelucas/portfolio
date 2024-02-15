@@ -13,8 +13,9 @@ const About = () => {
               <div className="content-section">
                   <div className="d-flex g-1 align-items-center pb-4 md-flex-column">
                       <img className="profile-img" loading="lazy" src={ProfileImage} alt="Profile image"/>
-                      <p>
-                          Olá! I am Manuel Lucas. A Lisbon-born Portuguese native with a passion for nurturing both people and technology. My journey began amidst the vibrant streets of Lisbon, where I fostered a deep appreciation for community and culture.</p>
+                        <p>
+                            Olá! I am Manuel Lucas.<br/> Olá! I'm Manuel Lucas, a Lisbon-born Portuguese native deeply passionate about fostering growth through technology.
+                        </p>
                   </div>
                   <p>
                       🥦🌟 With a natural inclination towards caring for others and a keen interest in nutrition, I pursued a degree in Nutrition. For many years, I dedicated myself to helping individuals lead healthier, happier lives through personalised dietary guidance and education.
