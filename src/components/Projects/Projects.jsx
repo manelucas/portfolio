@@ -3,7 +3,8 @@ import Card from './Card/Card'
 import Governance360 from '../../assets/governance360.png'
 import IotablImage from '../../assets/iotabl_1.png'
 import No1SEImage from '../../assets/no1se.png'
-import BeersApiImage from '../../assets/punk_api.png'
+// import BeersApiImage from '../../assets/punk_api.png'
+import Weather from '../../assets/weather.png'
 import CalculatorImage from '../../assets/calculator.png'
 import MorseCodeImage from '../../assets/morse_code.png'
 
@@ -37,15 +38,24 @@ const Projects = () => {
             links: null,
             disclaimer: "* Repo is private."
         },
+        // {
+        //     id: 3,
+        //     imageSrc: No1SEImage,
+        //     title: "No1 South East",
+        //     description: "Development included essential features such as a search functionality, advanced filtering options, geolocation, and an admin panel.",
+        //     technologies: "React, SASS, Firebase, API.",
+        //     links: null,
+        //     disclaimer: "* Repo is private."
+        // },
         {
             id: 4,
-            imageSrc: BeersApiImage,
-            title: "Beers API",
-            description: "An early personal project representing my foray into REST API development and search functionality implementation, showcasing foundational skills in backend integration and data retrieval.",
-            technologies: "React & CSS, Rest API.",
+            imageSrc: Weather,
+            title: "Weather App",
+            description: "A little practice of using a REST API and display its data. Find the current weather from any part of the world!",
+            technologies: "Vite Vue, Boostrap, CSS, Rest API",
             links: [
                 { url: "https://github.com/manelucas/beersAPI", text: "Code" },
-                { url: "https://beer-api-713a5.web.app/", text: "Page" }
+                { url: "https://github.com/manelucas/weather-checker/", text: "Page" }
             ],
             disclaimer: null
         },
