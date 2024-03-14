@@ -11,7 +11,7 @@ body {
   color: #f3f3f3 !important;
 }
 
-h2, h3, h4, h5, h6, nav a {
+h1, h2, h3, h4, h5, h6, nav a {
   color:rgb(251, 182, 54);
   font-weight: 500;
 }
@@ -29,7 +29,7 @@ nav {
 }
 
 nav a {
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px 15px;
   opacity: 0.85;
   font-weight: 700;
@@ -61,7 +61,7 @@ nav a:hover {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -202,14 +202,17 @@ a:hover {
   border-radius: 8px 8px 0 0;
 }
 
-.description-height {
-  min-height: 200px;
-}
-
 .project-card {
   background-color: rgba(14, 77, 128, 0.3);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
+}
+
+.card-bottom {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .g-2 {
@@ -315,9 +318,7 @@ a:hover {
   .author {
       line-height: 2.2rem;
   }
-  nav a {
-      font-size: 25px;
-  }
+  
   span {
       font-size: 14px;
       font-weight: 500;
@@ -325,10 +326,6 @@ a:hover {
 
   .image-container {
       width: 300px;
-  }
-  .project-card {
-    padding: 1rem;
-    align-items: center;
   }
   .card-image {
     opacity: 1;

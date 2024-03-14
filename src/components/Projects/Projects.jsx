@@ -15,7 +15,7 @@ const Projects = () => {
             imageSrc: Governance360,
             title: "Governance360",
             technologies: "React & Typescript, Laravel, Redux, MUI, Storybook.",
-            description: `In my role, I am involved in every stage of the lifecycle of our web app, starting from ideation, through development, maintenance, testing, and bug fixing. I take charge of the technical aspects of our commercial website, leading its implementation, content management, optimization, and customization of modules, as well as maintenance and bug fixing. Additionally, I serve as a liaison between our technical team and the commercial team, ensuring that all requirements are understood and effectively translated into actionable technical solutions.`,
+            description: `Involved in every stage of the lifecycle of our web app, starting from ideation, through development of key features, maintenance, testing, and bug fixing. Also have led the technical architecture of our commercial website.`,
             links: [{ url: "https://www.governance360.com/", text: "Website" }],
             disclaimer: "* Web App & repo are private."
         },
@@ -23,7 +23,7 @@ const Projects = () => {
             id: 2,
             imageSrc: IotablImage,
             title: "Iotabl",
-            description: `As the technical lead at Iotabl, I overseen the development of a two-sided IoT data collection platform. I've managed technical aspects, ensuring performance and scalability, collaborating with cross-functional teams, while driving innovation. I made critical decisions on the technology stack, system design, and feature prioritisation, aligning technical efforts with business goals. My role combined technical expertise, leadership, and collaboration to build and maintain a competitive IoT solution.`,
+            description: `Overseen the development of a two-sided IoT data collection platform. I have managed technical aspects, ensuring performance and scalability. I made critical decisions on the technology stack, system design, and feature prioritisation, aligning technical efforts with business goals.`,
             technologies: "Vue & Laravel, CSS, Bootstrap, AWS, MySQL.",
             links: [{ url: "https://github.com/manelucas/iotabl", text: "Code" }],
             disclaimer: null
@@ -32,7 +32,7 @@ const Projects = () => {
             id: 3,
             imageSrc: No1SEImage,
             title: "No1 South East",
-            description: "Crafted the minimum viable product (MVP) for No1 South East, a dynamic web application catering to the South East London area's food enthusiasts. Development included essential features such as a search functionality, advanced filtering options, geolocation, and an admin panel.",
+            description: "Development included essential features such as a search functionality, advanced filtering options, geolocation, and an admin panel.",
             technologies: "React, SASS, Firebase, API.",
             links: null,
             disclaimer: "* Repo is private."
