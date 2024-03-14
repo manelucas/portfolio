@@ -11,7 +11,14 @@ body {
   color: #f3f3f3 !important;
 }
 
+h2, h3, h4, h5, h6, nav a {
+  color:rgb(251, 182, 54);
+  font-weight: 500;
+}
 
+li {
+  list-style-type: none;
+}
 nav {
   height: 70px; 
   background: linear-gradient(90deg, #1c8d8f, #066769);
@@ -23,16 +30,16 @@ nav {
 
 nav a {
   font-size: 20px;
-  color: #f3f3f3;
+  padding: 10px 15px;
   opacity: 0.85;
-  padding: 10px 5px;
+  font-weight: 700;
   border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
   border-bottom: 2px solid white;
-  opacity: 1;
   text-decoration: none;
+  opacity: 1;
 }
 
 #about, #projects {
@@ -164,11 +171,45 @@ span {
   opacity: 1;
 }
 
+.card-image {
+  position: relative;
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: opacity 0.5s ease; 
+}
+
+.card-image:hover {
+  opacity: 1;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.email {
+  text-decoration: none;
+}
+
+.email:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.br-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.description-height {
+  min-height: 200px;
+}
+
 .project-card {
   background-color: rgba(14, 77, 128, 0.3);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
   border-radius: 10px;
-  padding: 3rem;
 }
 
 .g-2 {
@@ -289,6 +330,17 @@ span {
     padding: 1rem;
     align-items: center;
   }
+  .card-image {
+    opacity: 1;
+  }
+
+  .description-height {
+    min-height: none;
+  }
+  nav a {
+    opacity: 1;
+  }
+  
 }
 
 

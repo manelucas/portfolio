@@ -1,17 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Card from './Card/Card'
-import BoardImage from '../../assets/board_meetings_image.png'
+import Governance360 from '../../assets/governance360.png'
 import IotablImage from '../../assets/iotabl_1.png'
 import No1SEImage from '../../assets/no1se.png'
 import BeersApiImage from '../../assets/punk_api.png'
 import CalculatorImage from '../../assets/calculator.png'
+import MorseCodeImage from '../../assets/morse_code.png'
 
 const Projects = () => {
 
     const projectsData = [
         {
             id: 1,
-            imageSrc: BoardImage,
+            imageSrc: Governance360,
             title: "Governance360",
             technologies: "React & Typescript, Laravel, Redux, MUI, Storybook.",
             description: `In my role, I am involved in every stage of the lifecycle of our web app, starting from ideation, through development, maintenance, testing, and bug fixing. I take charge of the technical aspects of our commercial website, leading its implementation, content management, optimization, and customization of modules, as well as maintenance and bug fixing. Additionally, I serve as a liaison between our technical team and the commercial team, ensuring that all requirements are understood and effectively translated into actionable technical solutions.`,
@@ -48,18 +49,30 @@ const Projects = () => {
             ],
             disclaimer: null
         },
-        // {
-        //     id: 5,
-        //     imageSrc: CalculatorImage,
-        //     title: "Calculator",
-        //     description: "The famous calculator project that every beginner goes through. This was one of my first projects that I completed during my coding bootcamp at Nology. This significantly bolstered my technical skills, offering invaluable confidence in problem-solving and software development.",
-        //     technologies: "Vanilla JS, HTML, CSS.",
-        //     links: [
-        //         { url: "https://github.com/manelucas/calculator", text: "Code" },
-        //         { url: "https://manelucas.github.io/calculator/", text: "Page" }
-        //     ],
-        //     disclaimer: null
-        // }
+        {
+            id: 5,
+            imageSrc: CalculatorImage,
+            title: "Calculator",
+            description: "The famous calculator project that every beginner goes through. This was one of my first projects that I completed during my coding bootcamp at Nology. This significantly bolstered my technical skills, offering invaluable confidence in problem-solving and software development.",
+            technologies: "Vanilla JS, HTML, CSS.",
+            links: [
+                { url: "https://github.com/manelucas/calculator", text: "Code" },
+                { url: "https://manelucas.github.io/calculator/", text: "Page" }
+            ],
+            disclaimer: null
+        },
+        {
+            id: 6,
+            imageSrc: MorseCodeImage,
+            title: "Morse code translator",
+            description: "Converts text to Morse code and vice versa. Developed using HTML, CSS, and JavaScript. This was a challenge as part of the technical bootcamp at nology, and has contrubuted to refining my skills in data manipulation, and structured data handling.",
+            technologies: "Vanilla JS, HTML, CSS.",
+            links: [
+                { url: "https://github.com/manelucas/translation_english_to_morse", text: "Code" },
+                { url: "https://manelucas.github.io/translation_english_to_morse/", text: "Page" }
+            ],
+            disclaimer: null
+        }
       ];
 
       const [isVisible, setIsVisible] = useState(false);
@@ -85,21 +98,21 @@ const Projects = () => {
 
     return (
         <>
-            <section id="projects">
-                <div className="py-4 border-bottom">
-                    <h2 className="mt-100">Projects</h2>
-                </div>
-                <div className="content-section">
-                    <div className="row">
-                        <div className="col">
-                            {!!projectsData && projectsData.map((project, index) => (
-                                <div key={index} className={`card-wrapper faded-animation ${isVisible ? 'visible' : ''} mb-5`}>
-                                <Card imageSrc={project.imageSrc} links={project.links} title={project.title} description={project.description} technologies={project.technologies} disclaimer={project.disclaimer} />
-                                </div>
-                            ))}
-                        </div>
+          <section id="projects">
+            <div className="py-4 border-bottom">
+                <h2 className="mt-100">Projects & work</h2>
+            </div>
+            <div className="content-section">
+              <div className="row">
+                {!!projectsData && projectsData.map((project, index) => (
+                  <div className="col-xs-12 col-lg-6">
+                    <div className={`card-wrapper faded-animation ${isVisible ? 'visible' : ''} mb-5`}>
+                      <Card imageSrc={project.imageSrc} links={project.links} title={project.title} description={project.description} technologies={project.technologies} disclaimer={project.disclaimer} />
                     </div>
-                 </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </section>
         </>
     )

@@ -4,10 +4,14 @@ const Navbar = () => {
   return (
     <nav className="navbar-fixed w-100">
         <div className="container h-100">
-            <div className="d-flex justify-content-end g-2 align-items-center">              
+          <ul className='d-flex h-100 justify-content-end g-2 align-items-center'>
+            <li>              
               <a href="#about" className="text-decoration-none">About</a>
+            </li>
+            <li>
               <a href="#projects" className="text-decoration-none">Projects</a>
-            </div>
+            </li>
+          </ul>
         </div>
     </nav>
   );
