@@ -63,7 +63,7 @@ const Projects = () => {
             id: 5,
             imageSrc: CalculatorImage,
             title: "Calculator",
-            description: "The famous calculator project that every beginner goes through. This was one of my first projects that I completed during my coding bootcamp at Nology. This significantly bolstered my technical skills, offering invaluable confidence in problem-solving and software development.",
+            description: "The famous calculator project that every beginner goes through. This was one of my first projects during my coding bootcamp at Nology.",
             technologies: "Vanilla JS, HTML, CSS.",
             links: [
                 { url: "https://github.com/manelucas/calculator", text: "Code" },
@@ -75,7 +75,7 @@ const Projects = () => {
             id: 6,
             imageSrc: MorseCodeImage,
             title: "Morse code translator",
-            description: "Converts text to Morse code and vice versa. Developed using HTML, CSS, and JavaScript. This was a challenge as part of the technical bootcamp at nology, and has contrubuted to refining my skills in data manipulation, and structured data handling.",
+            description: "Converts text to Morse code and vice versa. Also a nology project - this has contrubuted to refining my skills in data manipulation, and data handling.",
             technologies: "Vanilla JS, HTML, CSS.",
             links: [
                 { url: "https://github.com/manelucas/translation_english_to_morse", text: "Code" },

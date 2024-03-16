@@ -24,13 +24,8 @@ const Card = (props) => {
                     <p className='fs-6'>{technologies}</p>
                 </div> 
                 <div>
-                    {!!disclaimer && (
-                        <div className="py-2">
-                            <i>{disclaimer}</i>
-                        </div>
-                    )}  
                     {!!links && (
-                        <div className="pb-4 row">
+                        <div className="py-2 row">
                             {links.map((link, index) => (
                                 <div key={index} className={links.length > 1 ? 'col-6' : 'col-12'}>
                                     <span key={index}>
@@ -40,6 +35,13 @@ const Card = (props) => {
                             ))}
                         </div>
                     )}
+
+                    {!!disclaimer && (
+                        <div className='pb-2'>
+                            <button disabled className='btn btn-light w-100'>{disclaimer}</button>
+                            {/* <i>{disclaimer}</i> */}
+                        </div>
+                    )}  
                 </div>
                     
 
