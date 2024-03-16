@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className="d-flex justify-content-between align-items-center">
                             <span className='bold fs-5'>Manuel Lucas</span>
                             <div className='d-flex g-1'>
-                                <a href="https://www.linkedin.com/in/manuel-krus-galvao-lucas-821b091a2/" target="_blank" rel="noreferrer" className="text-primary fs-4 text-decoration-none">
+                                <a href="https://www.linkedin.com/in/manuel-lucas-821b091a2/" target="_blank" rel="noreferrer" className="text-primary fs-4 text-decoration-none">
                                     <i className="fab fa-linkedin-in fs-1 text-white"></i>
                                 </a>
                                 <a href="https://github.com/manelucas" target="_blank" rel="noreferrer" className="text-primary fs-4 text-decoration-none">
