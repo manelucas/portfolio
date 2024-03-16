@@ -32,7 +32,7 @@ const Card = (props) => {
                     {!!links && (
                         <div className="pb-4 row">
                             {links.map((link, index) => (
-                                <div className={links.length > 1 ? 'col-6' : 'col-12'}>
+                                <div key={index} className={links.length > 1 ? 'col-6' : 'col-12'}>
                                     <span key={index}>
                                         <a href={link.url} target="_blank" rel="noreferrer" className="w-100 btn btn-primary">{link.text}</a>
                                     </span>
