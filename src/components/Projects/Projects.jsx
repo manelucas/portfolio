@@ -54,8 +54,8 @@ const Projects = () => {
             description: "A little practice of using a REST API and display its data. Find the current weather from any part of the world!",
             technologies: "Vite Vue, Boostrap, CSS, Rest API",
             links: [
-                { url: "https://github.com/manelucas/beersAPI", text: "Code" },
-                { url: "https://github.com/manelucas/weather-checker/", text: "Page" }
+                { url: "https://github.com/manelucas/weather-checker/", text: "Code" },
+                { url: "https://manelucas.github.io/weather-checker/", text: "Page" }
             ],
             disclaimer: null
         },
@@ -115,7 +115,7 @@ const Projects = () => {
             <div className="content-section">
               <div className="row">
                 {!!projectsData && projectsData.map((project, index) => (
-                  <div className="col-xs-12 col-lg-6">
+                  <div key={index} className="col-xs-12 col-lg-6">
                     <div className={`card-wrapper faded-animation ${isVisible ? 'visible' : ''} mb-5`}>
                       <Card imageSrc={project.imageSrc} links={project.links} title={project.title} description={project.description} technologies={project.technologies} disclaimer={project.disclaimer} />
                     </div>
