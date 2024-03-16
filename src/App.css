@@ -68,6 +68,9 @@ h2 {
   font-size: 45px;  
 }
 
+h3 {
+  font-size: 30px;
+}
 
 .author {
   font-size: 1.8rem;
@@ -336,7 +339,14 @@ a:hover {
   }
   nav a {
     opacity: 1;
+    font-size: 20px;
+    padding: 10px;
   }
+
+  g-2 {
+    gap: 10px;
+  }
+
   
 }
 

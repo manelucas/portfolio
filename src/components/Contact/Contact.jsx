@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <>
             <section id="contact">
-                <div className="row">
+                <div className="d-flex flex-column">
                     <div className="pt-2">
                         <h2>
                             Get in touch

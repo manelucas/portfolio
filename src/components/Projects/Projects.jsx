@@ -15,17 +15,17 @@ const Projects = () => {
             id: 1,
             imageSrc: Governance360,
             title: "Governance360",
-            technologies: "React & Typescript, Laravel, Redux, MUI, Storybook.",
+            technologies: "React & Typescript, Laravel, Redux, MUI, Storybook",
             description: `Involved in every stage of the lifecycle of our web app, starting from ideation, through development of key features, maintenance, testing, and bug fixing. Also have led the technical architecture of our commercial website.`,
             links: [{ url: "https://www.governance360.com/", text: "Website" }],
-            disclaimer: "* Web App & repo are private."
+            disclaimer: "Web App & repo are private."
         },
         {
             id: 2,
             imageSrc: IotablImage,
             title: "Iotabl",
             description: `Overseen the development of a two-sided IoT data collection platform. I have managed technical aspects, ensuring performance and scalability. I made critical decisions on the technology stack, system design, and feature prioritisation, aligning technical efforts with business goals.`,
-            technologies: "Vue & Laravel, CSS, Bootstrap, AWS, MySQL.",
+            technologies: "Vue & Laravel, CSS, Bootstrap, AWS, MySQL",
             links: [{ url: "https://github.com/manelucas/iotabl", text: "Code" }],
             disclaimer: null
         },
@@ -34,9 +34,9 @@ const Projects = () => {
             imageSrc: No1SEImage,
             title: "No1 South East",
             description: "Development included essential features such as a search functionality, advanced filtering options, geolocation, and an admin panel.",
-            technologies: "React, SASS, Firebase, API.",
+            technologies: "React, SASS, Firebase, API",
             links: null,
-            disclaimer: "* Repo is private."
+            disclaimer: "Repo is private."
         },
         // {
         //     id: 3,
@@ -64,7 +64,7 @@ const Projects = () => {
             imageSrc: CalculatorImage,
             title: "Calculator",
             description: "The famous calculator project that every beginner goes through. This was one of my first projects during my coding bootcamp at Nology.",
-            technologies: "Vanilla JS, HTML, CSS.",
+            technologies: "Vanilla JS, HTML, CSS",
             links: [
                 { url: "https://github.com/manelucas/calculator", text: "Code" },
                 { url: "https://manelucas.github.io/calculator/", text: "Page" }
@@ -110,7 +110,7 @@ const Projects = () => {
         <>
           <section id="projects">
             <div className="py-4 border-bottom">
-                <h2 className="mt-100">Projects & work</h2>
+                <h2 className="mt-100">Projects & Work</h2>
             </div>
             <div className="content-section">
               <div className="row">

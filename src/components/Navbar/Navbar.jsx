@@ -11,6 +11,9 @@ const Navbar = () => {
             <li>
               <a href="#projects" className="text-decoration-none">Projects</a>
             </li>
+            <li>
+              <a href="#contact" className="text-decoration-none">Contact</a>
+            </li>
           </ul>
         </div>
     </nav>

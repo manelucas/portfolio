@@ -10,7 +10,6 @@ const Card = (props) => {
                 <img className="w-100 h-100 " loading="lazy" src={imageSrc} alt={`Image from the ${title} project`} />
             </div>
             <div className="card-bottom p-4">
-             
                 <div>
                     <h3 className='bold w-100'>{title}</h3>
                 </div>
@@ -39,12 +38,9 @@ const Card = (props) => {
                     {!!disclaimer && (
                         <div className='pb-2'>
                             <button disabled className='btn btn-light w-100'>{disclaimer}</button>
-                            {/* <i>{disclaimer}</i> */}
                         </div>
                     )}  
                 </div>
-                    
-
             </div>
         </div>
         
