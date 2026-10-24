@@ -1,11 +1,10 @@
 import React from 'react'
-import ProfileImage from '../../assets/profile_photo.png'
 
 const About = () => {
     return(
         <>
             <section id="about">
-              <div className="py-2 border-bottom">
+              <div className="section-heading">
                   <h2>
                       About
                   </h2>

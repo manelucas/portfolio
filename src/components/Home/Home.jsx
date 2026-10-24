@@ -6,11 +6,11 @@ const Home = () => {
             <section className="row intro-container slide-left">
                 <div className="h-100 d-flex flex-column align-items-center justify-content-center gap-3">
                     <div className='pb-3'>
-                        <img className="profile-img" loading="lazy" src={ProfileImage} alt="Profile image"/>
+                        <img className="profile-img" loading="lazy" src={ProfileImage} alt="Manuel Lucas"/>
                     </div>
                     <h1 className="main-title">Software Developer</h1>            
-                    <span className="d-block author fs-2">Manuel Lucas</span>
-                    <p className="text-bold px-0">Check out below for more</p>
+                    <span className="d-block author">Manuel Lucas</span>
+                    <p className="intro-cta">Check out below for more</p>
                     
                 </div>
             </section>

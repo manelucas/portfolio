@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className="navbar-fixed w-100">
+    <nav className="site-nav w-100">
         <div className="container h-100">
           <ul className='d-flex h-100 justify-content-end g-2 align-items-center'>
             <li>              
