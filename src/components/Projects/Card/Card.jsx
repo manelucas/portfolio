@@ -1,21 +1,12 @@
 import React from 'react'
 
-const Card = ({ image, title, description, technologies = [], links = [], disclaimer }) => {
-
-    const primaryLink = links[0];
-    const imageEl = <img src={image} alt={`Screenshot of ${title}`} className="project-card__img" loading="lazy" />;
+const Card = ({ image, title, description, technologies = [], link }) => {
 
     return (
-        <article className="project-card">
-            {primaryLink ? (
-                <a href={primaryLink.url} target="_blank" rel="noreferrer" className="project-card__image">
-                    {imageEl}
-                </a>
-            ) : (
-                <div className="project-card__image">
-                    {imageEl}
-                </div>
-            )}
+        <article className={`project-card${link ? ' project-card--linked' : ''}`}>
+            <div className="project-card__image">
+                <img src={image} alt={`Screenshot of ${title}`} className="project-card__img" loading="lazy" />
+            </div>
             <div className="project-card__body">
                 <h3>{title}</h3>
                 <p className="project-card__description">{description}</p>
@@ -28,18 +19,14 @@ const Card = ({ image, title, description, technologies = [], links = [], discla
                     </ul>
                 )}
 
-                <div className="project-card__links">
-                    {links.map((link, index) => (
-                        <a key={link.url} href={link.url} target="_blank" rel="noreferrer" className={index === 0 ? 'btn-accent' : 'btn-outline'}>
+                {link && (
+                    <div className="project-card__links">
+                        {/* Its ::after overlay stretches over the card, making the whole card clickable */}
+                        <a href={link.url} target="_blank" rel="noreferrer" className="btn-accent project-card__link">
                             {link.text}
                         </a>
-                    ))}
-                    {!!disclaimer && (
-                        <span className="disclaimer">
-                            <i className="fa-solid fa-lock"></i> {disclaimer}
-                        </span>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
         </article>
     )
